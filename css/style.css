@@ -1195,3 +1195,357 @@ body{
     
 }
 /*footer style end*/
+@media (max-width: 1200px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    
+    .intro_title, .intro_title-grad {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    .about_title, .about_title-grad,
+    .product_title, .product_title-grad {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .resources_h1, .resources_h1-grad {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    
+    .blog_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .price_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .review_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header_nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 20px;
+        transition: 0.3s;
+        z-index: 999;
+    }
+    
+    .header_nav.open {
+        left: 0;
+    }
+    
+    .header_list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header_item {
+        margin: 0 0 20px 0;
+    }
+    
+    .header_burger {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .header_burger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #170033;
+        transition: 0.3s;
+    }
+    
+    .header_burger span:nth-child(1) {
+        top: 0;
+    }
+    
+    .header_burger span:nth-child(2) {
+        top: 9px;
+    }
+    
+    .header_burger span:nth-child(3) {
+        bottom: 0;
+    }
+    
+    .header_burger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    
+    .header_burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .header_burger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    
+    .intro_cont,
+    .about_cont,
+    .product_cont,
+    .resources_cont,
+    .review_cont {
+        grid-template-columns: 1fr;
+    }
+    
+    .intro_box2,
+    .resources_box2,
+    .review_box1 {
+        display: none;
+    }
+    
+    .intro_welcome,
+    .about_welcome,
+    .product_welcome,
+    .resources_welcome,
+    .blog_welcome,
+    .answers_welcome,
+    .price_welcome,
+    .review_welcome {
+        padding-top: 40px;
+    }
+    
+    .about_menu {
+        grid-template-columns: 1fr;
+    }
+    
+    .boxmenu1, .boxmenu2, .boxmenu3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .blog_cont1 {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .blog_cont2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog_box1, .blog_box2, .blog_box3, 
+    .blog_box4, .blog_box5 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+    
+    .price_cont {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer_cont {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro_title, .intro_title-grad {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .about_title, .about_title-grad,
+    .product_title, .product_title-grad,
+    .resources_h1, .resources_h1-grad,
+    .blog_title, .price_title,
+    .review_title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .intro_form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .lets {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .blog_cont1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .answers_cont {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer_cont {
+        grid-template-columns: 1fr;
+    }
+    
+    .generate_cont {
+        width: 100%;
+    }
+    
+    .generate_form-field {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro_title, .intro_title-grad {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .about_title, .about_title-grad,
+    .product_title, .product_title-grad,
+    .resources_h1, .resources_h1-grad,
+    .blog_title, .price_title,
+    .review_title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    
+    .intro_subtitle,
+    .about_subtitle,
+    .product_subtitle1,
+    .product_subtitle2,
+    .resources_p,
+    .blog_subtitle,
+    .answers_p,
+    .price_subtitle,
+    .review_subtitle,
+    .footer_box1-p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .header_logo-pic {
+        max-width: 120px;
+    }
+    
+    .generate_form-field {
+        width: 50%;
+    }
+    
+    .button_generate {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .price_boxinfo1, .price_boxinfo2 {
+        width: 100%;
+    }
+    
+    .button_price {
+        padding: 10px 60px;
+    }
+}
+
+/* Дополнительные адаптивные стили для элементов */
+@media (max-width: 992px) {
+    .intro_block {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .brands {
+        margin: 10px auto;
+        max-width: 150px;
+    }
+    
+    .intro_block .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_wrapper {
+        padding-top: 20px;
+    }
+    
+    .intro_users {
+        margin-bottom: 60px;
+    }
+    
+    .about_menu,
+    .resources_box1,
+    .blog_cont1,
+    .blog_cont2,
+    .answers_cont,
+    .price_cont,
+    .review_cont {
+        margin-bottom: 60px;
+    }
+    
+    .footer {
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
+
+/* Анимации для улучшения UX */
+.header {
+    transition: all 0.3s ease;
+}
+
+.header_link {
+    transition: all 0.3s ease;
+}
+
+.button_generate,
+.button_price,
+.footer_email-but {
+    transition: all 0.3s ease;
+}
+
+.button_generate:hover,
+.button_price:hover,
+.footer_email-but:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Улучшение читаемости на мобильных */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1, h2, h3 {
+        margin-bottom: 10px;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .accordion-button {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .accordion-content {
+        padding: 10px;
+    }
+}
